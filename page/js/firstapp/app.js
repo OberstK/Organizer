@@ -1,4 +1,4 @@
-var firstApp = angular.module('firstApp', ['ngRoute']);
+var firstApp = angular.module('firstApp', ['ngRoute', 'ngSanitize']);
 
 firstApp.config(function ($routeProvider){
 	$routeProvider
@@ -6,7 +6,7 @@ firstApp.config(function ($routeProvider){
 			{
 				controller: 'classController',
 				templateUrl: 'Partials/Kurse.html'
-			})	
+			})
 			.otherwise({ redirectTo: '/' });
 		
 });

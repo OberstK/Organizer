@@ -4,4 +4,6 @@ var classController = firstApp.controller('classController', function($scope){
 		{name: "Unternehmenskommunikation", prof: "Prof. Dr. Schoop", fachgebiet: "Winf"},
 		{name: "Technologiemanagement", prof: "Prof. Dr. Schefzcyck", fachgebiet: "BWL"}
 	];
+
+	
 });
