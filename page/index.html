@@ -11,15 +11,26 @@
 		<!-- INCLUDE APPLICATION SPECIFIC CSS AND JAVASCRIPT -->
 		<script type="text/javascript" src="js/firstapp/app.js"></script>
 		<script type="text/javascript" src="js/firstapp/controllers/classController.js"></script>
+		<script type="text/javascript" src="js/firstapp/controllers/mainController.js"></script>
 		<link type="text/css"  rel="stylesheet" href="css/main.css">
 
 	</head>
-	<body ng-controller="classController">
+	<body ng-controller="mainController">
 		<div class="body">
 			<!-- Static Header as a simple picture -->
 			<div id="header" class="general">Platzhalter fuer den eigentlichen Header</div>
 			<!-- Navigation Bar 'Tab Style', each Tab selects a different Route for the Main Div -->
-			<div id="nav" class="general">Platzhalter fuer die Navigationsbar</div><div id="Unav" class="general"><table>
+			<div id="nav" class="general">
+				<ul class="nav nav-tabs">
+  					<li id="tab1" class="active" ng-click="tabClick()">
+    					<a href="#">Tab 1</a>
+  					</li>
+  					<!-- Tab 2 for all Classes to show -->
+  					<li id="tab2" class="inactive" ng-click="tabClick()">
+    					<a href="#/kurse">Tab 2</a>
+  					</li>
+				</ul>
+			</div><div id="Unav" class="general"><table>
 					<!-- Dynamic Selectors, depending on the Route -->
 					<tr><td class="dynmen">Unternemue-</td></tr>
 					<tr><td class="dynmen">Auswahlfelder</td></tr>
@@ -32,9 +43,7 @@
 			</div>
 			<!-- Here is where the magic happens. Content depends on the selected Tab (Routing) -->
 			<div id="main" class="general">
-				<ul>
-					<li ng-repeat="class in classes">{{ class.name }}</li>
-				</ul>
+				<div ng-view=""></div>
 			</div>
 			
 		</div>

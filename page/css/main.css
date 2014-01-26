@@ -23,7 +23,7 @@ body{
 	height: 50px;
 	margin-top: 20px;
 	margin-left: 50px;
-	border: solid black 1px;
+	/*border: solid black 1px;*/
 	border-radius: 5px;
 	background-color: white;
 	z-index: 3;
@@ -34,7 +34,9 @@ body{
 	min-height: 600px;
 	margin-left: 50px;
 	background-color: white;
-	border: solid black 1px;
+	border-style: none solid none solid;
+	border-color:  black;
+	border-width:  1px;
 	border-radius: 5px;
 	z-index: 3;
 }
@@ -52,4 +54,17 @@ body{
 	border-radius: 5px;
 	width: 230px;
 	padding: 5px;
+}
+.btn{
+	height: 50px;
+	width: 100px;
+}
+.active{
+	
+	width: 100px;
+}
+.nav nav-tabs{
+	height: auto;
+	margin-top: 0px
+
 }
