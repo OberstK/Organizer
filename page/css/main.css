@@ -1,5 +1,5 @@
 body{
-	background-color: #FFC652;
+	background-color: #F3F781;
 }
 .body{
 	width: 1200px;
@@ -62,8 +62,7 @@ body{
 	width: 100px;
 }
 .active{
-	
-	width: 100px;
+	width: auto;
 }
 .nav nav-tabs{
 	height: auto;

@@ -22,12 +22,24 @@
 			<!-- Navigation Bar 'Tab Style', each Tab selects a different Route for the Main Div -->
 			<div id="nav" class="general">
 				<ul class="nav nav-tabs">
-  					<li id="tab1" class="active" ng-click="tabClick()">
-    					<a href="#">Tab 1</a>
+  					<li id="tab1" class="active" ng-click="tabClick(1)">
+    					<a href="#/home">Meine Seite</a>
   					</li>
   					<!-- Tab 2 for all Classes to show -->
-  					<li id="tab2" class="inactive" ng-click="tabClick()">
-    					<a href="#/kurse">Tab 2</a>
+  					<li id="tab2" ng-click="tabClick(2)">
+    					<a href="#/kurse">Lehrveranstaltungen</a>
+  					</li>
+  					<li id="tab3" ng-click="tabClick(3)">
+    					<a href="#/termin-anlegen">Termin anlegen</a>
+  					</li>
+  					<li id="tab4" ng-click="tabClick(4)">
+    					<a href="#/aufgabe-anlegen">Aufgabe anlegen</a>
+  					</li>
+  					<li id="tab5" ng-click="tabClick(5)">
+    					<a href="#/aufgabe-anlegen">Allgemeines</a>
+  					</li>
+  					<li id="tab6" ng-click="tabClick(6)">
+    					<a href="#/rd">Entwicklung</a>
   					</li>
 				</ul>
 			</div><div id="Unav" class="general"><table>
