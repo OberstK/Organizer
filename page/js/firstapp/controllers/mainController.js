@@ -16,3 +16,7 @@ var mainController = firstApp.controller('mainController', function($scope){
 		document.getElementById("tab"+t).className="active";
 	};
 });
+
+$(function(){
+	$("#classes").accordion();
+});
