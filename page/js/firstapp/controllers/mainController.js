@@ -17,6 +17,3 @@ var mainController = firstApp.controller('mainController', function($scope){
 	};
 });
 
-$(function(){
-	$("#classes").accordion();
-});
