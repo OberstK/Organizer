@@ -7,6 +7,11 @@ firstApp.config(function ($routeProvider){
 				controller: 'classController',
 				templateUrl: 'Partials/Kurse.html'
 			})
-			.otherwise({ redirectTo: '/' });
+		.when('/termin-anlegen',
+			{
+				controller: 'neueTermine',
+				templateUrl: 'Partials/neueTermine.html'
+			})
+		.otherwise({ redirectTo: '/' });
 		
 });
