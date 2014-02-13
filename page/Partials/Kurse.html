@@ -2,9 +2,10 @@
 <!-- implementing the needed and specific CSS and Controller -->
 <script type="text/javascript" src="js/firstapp/controllers/classController.js"></script>
 <link rel="stylesheet" href="css/classes.css">
+
 	<div>Bitte wählen sie eine Lehrveranstaltung aus</div>
 	<div class="allClasses">
-		<accordion close-others="oneAtATime">
+		<accordion close-others="true">
 			<accordion-group ng-repeat="s in study" heading="{{ s.name }}">
 				<div ng-repeat="class in classes | filter:s.kurz">
 					{{ class.name }}
