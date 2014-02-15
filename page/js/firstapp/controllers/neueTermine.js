@@ -5,7 +5,8 @@ var neueTermine = firstApp.controller('neueTermine', function($scope){
 		{name: "Wirtschaftsinformatik"}
 	];
 
-	$("#study").dropdown();
+	//what does it actually do?
+	//$("#study").dropdown();
 
 });
 

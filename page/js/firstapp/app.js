@@ -13,5 +13,4 @@ firstApp.config(function ($routeProvider){
 				templateUrl: 'Partials/neueTermine.html'
 			})
 		.otherwise({ redirectTo: '/' });
-		
 });

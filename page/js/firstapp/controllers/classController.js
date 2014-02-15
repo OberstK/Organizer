@@ -12,7 +12,7 @@ var classController = firstApp.controller('classController', function($scope){
 
 	//probably not really necessary...
 	function classAccordion($scope){
-		 $scope.oneAtATime = true;
+		$scope.oneAtATime = true;
 	}
 
 });
