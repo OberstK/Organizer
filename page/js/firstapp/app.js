@@ -2,10 +2,18 @@ var firstApp = angular.module('firstApp', ['ngRoute', 'ngSanitize', 'ui.bootstra
 
 firstApp.config(function ($routeProvider){
 	$routeProvider
-		.when('/kurse',
+		.when('/main',
+			{
+				controller: 'mainController',
+				templateUrl: 'Partials/tabMain.html',
+				view: 'nav'
+			})
+		.when('/main/kurse',
 			{
 				controller: 'classController',
+				view: 'main',
 				templateUrl: 'Partials/Kurse.html'
+				
 			})
 		.when('/termin-anlegen',
 			{
