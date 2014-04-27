@@ -5,20 +5,19 @@ firstApp.config(function ($routeProvider){
 		.when('/main',
 			{
 				controller: 'mainController',
-				templateUrl: 'Partials/tabMain.html',
-				view: 'nav'
+				templateUrl: 'Partials/Main.html',
+				
 			})
 		.when('/main/kurse',
 			{
 				controller: 'classController',
-				view: 'main',
-				templateUrl: 'Partials/Kurse.html'
+				templateUrl: 'Partials/main-Kurse.html'
 				
 			})
-		.when('/termin-anlegen',
+		.when('/main/termin-anlegen',
 			{
 				controller: 'neueTermine',
-				templateUrl: 'Partials/neueTermine.html'
+				templateUrl: 'Partials/main-neueTermine.html'
 			})
 		.otherwise({ redirectTo: '/' });
 });

@@ -141,3 +141,10 @@
 	border-color: black;
 	padding-left: 20px;
 }
+#mainm{
+	height: 1000px;
+	margin-top: 200px;
+	margin-bottom: auto;
+	font-style: Impact;
+	font-size: 40px;
+}

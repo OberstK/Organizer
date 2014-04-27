@@ -9,8 +9,8 @@
             <li id="tab2" ng-click="tabClick(2)">
               <a href="#/main/kurse">Lehrveranstaltungen</a>
             </li>
-            <li id="tab3" ng-click="tabClick(3)">
-              <a href="#/termin-anlegen">Termin anlegen</a>
+            <li id="tab3" class="active" ng-click="tabClick(3)">
+              <a href="#/main/termin-anlegen">Termin anlegen</a>
             </li>
             <li id="tab4" ng-click="tabClick(4)">
               <a href="#/aufgabe-anlegen">Aufgabe anlegen</a>
@@ -32,11 +32,13 @@
 		<div class="input-group">
 			<p>Titel des Termins</p>
 			<input class="form-control" type="text">
-			<p>Zu welcher Lehrveranstaltung gehört der Termin</p>
-			<ul id="study" class="dropdown-menu" role="menu" aria-labelledby="dlabel1">
-				Studiengang
-				<li><a tabindex="-1" href="#">Test</a></li>
-			</ul>	
+			<p>Zu welcher Lehrveranstaltung gehört der Termin?</p>
+			<a class="dropdown-toogle">Dropdown</a>
+      <ul id="lvStudy" class="dropdown-menu">
+        <li ng-repeat="name in study">
+          {{name}}
+        </li>
+      </ul>
 		</div>	
 	</div>
 </div>  
