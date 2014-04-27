@@ -1,11 +1,10 @@
-
 <div id="nav" class="general">
   <ul class="nav nav-tabs">
             <li id="tab1" ng-click="tabClick(1)">
               <a href="#/home">Meine Seite</a>
             </li>
             <!-- Tab 2 for all Classes to show -->
-            <li id="tab2" class="active" ng-click="tabClick(2)">
+            <li id="tab2" ng-click="tabClick(2)">
               <a href="#/main/kurse">Lehrveranstaltungen</a>
             </li>
             <li id="tab3" ng-click="tabClick(3)">
@@ -14,7 +13,7 @@
             <li id="tab4" ng-click="tabClick(4)">
               <a href="#/aufgabe-anlegen">Aufgabe anlegen</a>
             </li>
-            <li id="tab5" ng-click="tabClick(5)">
+            <li id="tab5" class="active" ng-click="tabClick(5)">
               <a href="#/main/allgemeines">Allgemein anlegen</a>
             </li>
             <li id="tab6" ng-click="tabClick(6)">
@@ -23,22 +22,14 @@
   </ul>
 </div>
 <div id="main" class="general">
-	  <div>
+	 
 	<!-- implementing the needed and specific CSS and Controller -->
-	<script type="text/javascript" src="js/firstapp/controllers/classController.js"></script>
-	<link rel="stylesheet" href="css/classes.css">
-
-		<div><p>Bitte wählen sie eine Lehrveranstaltung aus</p></div>
-		<div class="allClasses">
-			<accordion close-others="true">
-				<accordion-group ng-repeat="s in study" heading="{{ s.name }}">
-					<div ng-repeat="class in classes | filter:s.kurz">
-						{{ class.name }}
-					</div>	
-				</accordion-group>
-			</accordion>	
-		</div>
+	<script type="text/javascript" src="js/firstapp/controllers/allgemeinesController.js"></script>
+	<link rel="stylesheet" href="css/allgemeines.css">
+	<div>
+		Hier kommt alles zum allgemeinen Anlegen diverser Dinge hin
 	</div>
+		
 </div>  
 <div id="footer" class="general">
         <div>Master of Desaster: Hendrik Thues</div>

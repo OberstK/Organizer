@@ -19,5 +19,10 @@ firstApp.config(function ($routeProvider){
 				controller: 'neueTermine',
 				templateUrl: 'Partials/main-neueTermine.html'
 			})
+		.when('/main/allgemeines',
+			{
+				controller: 'allgemeines',
+				templateUrl: 'Partials/main-allgemeines.html'
+			})
 		.otherwise({ redirectTo: '/' });
 });
